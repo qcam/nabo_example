@@ -1,0 +1,14 @@
+<div class="row posts--listing">
+  <div class="col-lg-12">
+    <%= for post <- @posts do %>
+      <div class="post">
+        <h1 class="post__title">
+          <a href="<%= post_path(@conn, :show, post.slug) %>">
+            <%= post.title %>
+          </a>
+        </h1>
+        <div class="post__intro"><%= post.excerpt %></div>
+      </div>
+    <% end %>
+  </div>
+</div>
