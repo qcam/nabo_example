@@ -1,4 +1,4 @@
-# MyBlog
+# Nabo blog engine example
 
 To start your Phoenix server:
 
